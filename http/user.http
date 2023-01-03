@@ -1,0 +1,4 @@
+POST http://localhost/news-app/app/Controllers/MainController.php?controller=Users&action=create
+Content-Type: application/x-www-form-urlencoded
+
+name=test&last_name=test&email=test@test&password=12345

@@ -1,0 +1,32 @@
+{
+  "name": "jeffergonzalez/news-app",
+  "description": "A simple news app built with PHP",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jefferson David González Cely",
+      "email": "jefferd2016@gmail.com",
+      "role": "Developer",
+      "homepage": "https://jeffergonzalez.github.io/portfolio/"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "ext-json": "*",
+    "ext-pdo": "*",
+    "ext-intl": "*",
+    "vlucas/phpdotenv": "^3.6",
+    "firebase/php-jwt": "^6.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteRule ^$ views [L]
+RewriteRule ^(app/|app/Models/|app/Controllers/|bin/|database/)?$ - [F,L]
+<FilesMatch "\.(env|lock|gitignore)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

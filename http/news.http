@@ -1,0 +1,21 @@
+# Get all news
+GET  http://localhost/news-app/app/Controllers/MainController.php?controller=News&action=getAll
+
+# Save a new news
+POST http://localhost/news-app/app/Controllers/MainController.php?controller=News&action=create
+ Content-Type: application/x-www-form-urlencoded
+
+ title=Esta es mi segunda noticia&description=Esta es la descripción de mi segunda noticia
+
+# Update a news
+POST http://localhost/news-app/app/Controllers/MainController.php?controller=News&action=update
+Content-Type: application/x-www-form-urlencoded
+
+id=2&title=Esta es mi segunda noticia&description=Esta es la descripción de mi segunda noticia con actualizar&date=022-12-29 19:59:06
+
+# Delete a news
+DELETE http://localhost/news-app/app/Controllers/MainController.php?controller=News&action=delete&id=2
+
+
+
+
